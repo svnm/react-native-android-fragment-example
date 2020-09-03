@@ -2,7 +2,9 @@
 
 An example integrating React Native into an Android Fragment
 
+<div style="text-align: center; width: 400px;">
 ![](screenshot.png)
+</div>
 
 ## Running the example
 
