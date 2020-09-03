@@ -1,14 +1,8 @@
 package com.example.reactnativeandroidfragmentexample;
 
 import android.app.Application;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-import androidx.fragment.app.Fragment;
 
 import com.facebook.react.ReactApplication;
-import com.facebook.react.ReactFragment;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;

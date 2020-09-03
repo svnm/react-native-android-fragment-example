@@ -21,13 +21,12 @@ public class MainActivity extends FragmentActivity implements DefaultHardwareBac
         mButton = findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 Fragment reactNativeFragment = new ReactFragment.Builder()
                         .setComponentName("HelloWorld")
                         .setLaunchOptions(getLaunchOptions("test message"))
                         .build();
 
-                // pass the id from the <FrameLayout> and the name of the Fragment reference we just created
+                // pass the id from the <FrameLayout> and the name of the Fragment reference we created
                 getSupportFragmentManager()
                         .beginTransaction()
                         .add(R.id.reactNativeFragment, reactNativeFragment)
