@@ -39,7 +39,7 @@ Follow the React Native guide for [Integration with Existing Apps](https://react
 
 ### 2. Integrating your App with a React Native Fragment
 
-In this guide we no longer want a full screen React Native Activity, instead we want to render our React Native component into a Fragment. The component may be termed a "screen", "view" or "fragment". It will be analagous to an Android fragment, and likely contains child components. In our example repo we placed all of these components in a `/fragments` folder and then had child components which they use to compose the fragment in the `/components` folder.
+In this guide we no longer want a full screen React Native Activity, instead we want to render our React Native component into a Fragment. The component may be termed a "screen" or "fragment". It will be analagous to an Android fragment, and likely contains child components. In our example we placed all of these components in a `/fragments` folder and the child components used to compose the fragment were in a `/components` folder.
 
 We need to implement ReactApplication in our main Application Java class. If you have created a new project from Android Studio with a default activity, you will need to create a new class e.g. MyReactApplication.java. If it is an existing class you can find this main class in your  `AndroidManifest.xml` file. Under the `<application />` tag you should see a property `android:name=".MyReactApplication"`. The value provided is the class you want to add this implementation to and provide the required methods.
 
