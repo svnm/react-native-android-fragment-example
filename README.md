@@ -8,7 +8,7 @@ An example integrating React Native into an Android Fragment
 
 ## Running the example
 
-This app extends on the [react native integration-with-existing-apps guide](https://reactnative.dev/docs/integration-with-existing-apps). Visit this if you are having any issues in initial setup.
+This app extends the [integration-with-existing-apps guide](https://reactnative.dev/docs/integration-with-existing-apps). Visit this if you are having any issues in initial setup.
 
 It follows the approach set up by [hudl](https://github.com/hudl/react-native-android-fragment) using a [ReactFragment](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/ReactFragment.java) to render a React Native component into an Android Fragment.
 
