@@ -26,7 +26,7 @@ yarn start
 
 Run your android app
 
-- Open up Android studio and click ▶️
+Open up Android studio and click ▶️
 
 
 ## Documentation
@@ -100,7 +100,7 @@ import java.util.Arrays;
 import java.util.List;
 ```
 
-Perform a “Sync Project files with Gradle” operation.
+Perform a "Sync Project files with Gradle" operation.
 
 ### Step 3. Add a FrameLayout for the React Native Fragment
 
@@ -192,7 +192,7 @@ import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 ```
 
-Perform a “Sync Project files with Gradle” operation.
+Perform a "Sync Project files with Gradle" operation.
 
 ### Step 5. Test your integration
 
