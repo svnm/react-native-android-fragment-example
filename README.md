@@ -35,7 +35,7 @@ The React Native guide for [Integration with Existing Apps](https://reactnative.
 
 ### 1. Add React Native to your app
 
-Follow the React Native guide for [Integration with Existing Apps](https://reactnative.dev/docs/integration-with-existing-apps) until the Code integration section. Continue to follow Step 1. Create a index.js file and Step 2. Add your React Native code from this section.
+Follow the React Native guide for [Integration with Existing Apps](https://reactnative.dev/docs/integration-with-existing-apps) until the Code integration section. Continue to follow Step 1. Create a index.android.js file and Step 2. Add your React Native code from this section. If you create the file as index.js you will need to override getJSMainModule() to `return "index";`
 
 ### 2. Integrating your App with a React Native Fragment
 
@@ -49,7 +49,7 @@ Ensure your main Application Java class implements ReactApplication:
 public class MyReactApplication extends Application implements ReactApplication {...}
 ```
 
-Override the required methods `getUseDeveloperSupport`, `getPackages`, `getJSMainModuleName` and `getReactNativeHost`:
+Override the required methods `getUseDeveloperSupport`, `getPackages` and `getReactNativeHost`:
 
 ```java
 public class MyReactApplication extends Application implements ReactApplication {
@@ -69,11 +69,6 @@ public class MyReactApplication extends Application implements ReactApplication 
             List<ReactPackage> packages = new PackageList(this).getPackages();
             // Packages that cannot be autolinked yet can be added manually here
             return packages;
-        }
-
-        @Override
-        protected String getJSMainModuleName() {
-            return "index";
         }
     };
 
@@ -166,7 +161,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 In the code above `Fragment reactNativeFragment = new ReactFragment.Builder()` creates our ReactFragment. and `getSupportFragmentManager().beginTransaction().add()` will add the Fragment to our Frame Layout
 
-If you are using a starter kit for React Native, replace the "HelloWorld" string with the one in your index.js file (it’s the first argument to the AppRegistry.registerComponent() method).
+If you are using a starter kit for React Native, replace the "HelloWorld" string with the one in your index.js or index.android.js file (it’s the first argument to the AppRegistry.registerComponent() method).
 
 Add the `getLaunchOptions` method which will allow you to pass props through to your component. This is optional and your can remove `setLaunchOptions` if you don't need to pass any props.
 

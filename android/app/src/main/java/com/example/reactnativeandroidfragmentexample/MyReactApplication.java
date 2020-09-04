@@ -29,11 +29,6 @@ public class MyReactApplication extends Application implements ReactApplication 
             // Packages that cannot be autolinked yet can be added manually here
             return packages;
         }
-
-        @Override
-        protected String getJSMainModuleName() {
-            return "index";
-        }
     };
 
     @Override
